@@ -1,25 +1,39 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 80px;
   padding: 20px;
   color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2em;
+  text-align: center;
 }
 
 .App-intro {
   font-size: large;
+  text-align: center;
+}
+
+.Bio {
+  font-size: large;
+  text-align: left;
+  list-style-type: none;
+  padding: 40px;
+  column-count: 2;
+  column-gap: 50px;
+  margin-right: -50px;
+  margin-left: 50px;
+}
+
+.Bio-title {
+  font-size: 1.5em;
+}
+
+.Bio-pic {
+  height: 300px;
+  padding-left: 50px;
+  text-align: justify;
 }
 
 @keyframes App-logo-spin {

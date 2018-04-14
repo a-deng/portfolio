@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import pic from './pic.jpg'
 import './App.css';
 
 class App extends Component {
   render() {
+    const info = ["School: Harvard College", "Concentration: Undecided", "Age: 18.16"]
+    const infoitems = info.map((info) => <li>{info}</li>)
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Angela Deng</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="Bio">
+          <div>
+            <h1 className="Bio-title">About Me:</h1>
+            <ul>{infoitems}</ul>
+          </div>
+          <img src={pic} className="Bio-pic" alt=""/>
+        </div>
       </div>
     );
   }
