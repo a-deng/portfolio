@@ -13,7 +13,7 @@ class App extends Component {
           <h1 className="App-title">Angela Deng</h1>
         </header>
         <div className="Bio">
-          <div>
+          <div className="Bio-info">
             <h1 className="Bio-title">About Me:</h1>
             <ul>{infoitems}</ul>
           </div>

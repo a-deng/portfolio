@@ -16,18 +16,22 @@
 }
 
 .Bio {
-  font-size: large;
-  text-align: left;
-  list-style-type: none;
   padding: 40px;
   column-count: 2;
   column-gap: 50px;
   margin-right: -50px;
-  margin-left: 50px;
+  background-color: #AFEEEE;
 }
 
 .Bio-title {
   font-size: 1.5em;
+}
+
+.Bio-info {
+  list-style-type: none;
+  font-size: large;
+  text-align: left;
+  margin-left: 50px;
 }
 
 .Bio-pic {
