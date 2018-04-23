@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
+import FontAwesome from 'react-fontawesome';
 import logo from './logo.svg';
-import pic from './pic.jpg'
+import pic from './pic.jpg';
+import sweetswap from './sweetswap.jpg';
+import sweetswap_desc from './sweetswap_desc.txt';
+import proj1 from './projects.js';
 import './App.css';
 
 class AboutMe extends Component {
@@ -25,8 +29,39 @@ class ClosedTile extends Component {
     return (
       <div className="Tile-closed">
         <h1> {this.props.name} </h1>
-        <h2> {this.props.subtitle} </h2>
-        {this.props.desc}
+        <img src={this.props.pic} className="Closed-pic" alt=""/>
+        <p> {this.props.desc} </p>
+      </div>
+    );
+  }
+}
+
+class LanguageTag extends Component {
+  render () {
+    return (
+      <div className="Lang-tag">
+        {this.props.language}
+      </div>
+    )
+  }
+}
+
+class OpenTile extends Component {
+  render () {
+    return (
+      <div className="Tile-open">
+        <h1 className="Open-title"> {this.props.name} </h1>
+        <div className="Row">
+        {this.props.langs.map((lang) => <LanguageTag language={lang}/>)}
+        </div>
+        <div className="Display-linebreak">
+          {this.props.longdesc}
+        </div>
+        <button className="Project-link">
+        <a href="https://devpost.com/software/sweetswap">
+          Project on Devpost
+        </a>
+        </button>
       </div>
     );
   }
@@ -51,7 +86,6 @@ class Tile extends Component {
 
   afterOpenModal() {
     // references are now sync'd and can be accessed.
-    this.subtitle.style.color = '#f00';
   }
 
   closeModal() {
@@ -62,36 +96,31 @@ class Tile extends Component {
     return (
       <div>
         <button onClick={this.openModal}>
-          <ClosedTile />
+          <ClosedTile {...this.props} />
         </button>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
-          contentLabel="Example Modal"
+          contentLabel="Project Modal"
         >
-          <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
-          <button onClick={this.closeModal}>close</button>
-          <div>I am a modal</div>
-          <form>
-            <input />
-            <button>tab navigation</button>
-            <button>stays</button>
-            <button>inside</button>
-            <button>the modal</button>
-          </form>
+          <OpenTile {...this.props} />
+          <button className="Close-tile" onClick={this.closeModal}>close</button>
         </Modal>
       </div>
     );
   }
 }
 
+
 class ProjectTiles extends Component {
   render () {
     return (
       <div className="Projects">
-        <Tile />
-        <Tile />
+        <h1 className="Bio-title">Projects:</h1>
+        <div className="Tiles">
+          <Tile {...proj1}/>
+        </div>
       </div>
     );
   }

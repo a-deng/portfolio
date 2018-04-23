@@ -41,11 +41,55 @@
 
 .Projects {
   padding: 40px;
+  background-color: #afcfee;
+}
+
+.Tiles {
+  position: relative;
 }
 
 .Tile-closed {
-  height: 250px;
-  width: 250px;
+  padding: 10px;
+  float: left;
+  position: relative;
+  width: 200px;
+/*  background-color: white;*/
+}
+
+.Close-tile {
+  margin: 10px;
+}
+
+.Closed-pic {
+  height: 120px;
+  padding: 10px;
+}
+
+.Row {
+  margin-bottom: 20px;
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+.Lang-tag {
+  padding:10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  position: relative;
+  width: 100px;
+  background-color: #afcfee;
+}
+
+.Display-linebreak {
+  white-space: pre-wrap;
+}
+
+.Project-link {
+  padding: 10px;
+  margin: 10px;
+  align-self: center;
 }
 
 @keyframes App-logo-spin {
