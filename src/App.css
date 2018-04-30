@@ -1,95 +1,19 @@
+.App {
+  background-color: #fafafa;
+}
+
 .App-header {
-  background-color: #222;
-  height: 80px;
-  padding: 20px;
-  color: white;
+  padding: 10px;
+  height: 170px;
+  text-align: center;
+  background-image: url("sky.gif");
+  background-size: cover;
 }
 
 .App-title {
-  font-size: 2em;
-  text-align: center;
-}
-
-.App-intro {
-  font-size: large;
-  text-align: center;
-}
-
-.Bio {
-  padding: 40px;
-  column-count: 2;
-  column-gap: 50px;
-  background-color: #AFEEEE;
-}
-
-.Bio-title {
-  font-size: 1.5em;
-}
-
-.Bio-info {
-  list-style-type: none;
-  font-size: large;
-  text-align: left;
-  margin-left: 50px;
-}
-
-.Bio-pic {
-  height: 300px;
-  padding-left: 50px;
-  text-align: justify;
-}
-
-.Projects {
-  padding: 40px;
-  background-color: #afcfee;
-}
-
-.Tiles {
-  position: relative;
-}
-
-.Tile-closed {
+  font-size: 2.5em;
   padding: 10px;
-  float: left;
-  position: relative;
-  width: 200px;
-/*  background-color: white;*/
-}
-
-.Close-tile {
-  margin: 10px;
-}
-
-.Closed-pic {
-  height: 120px;
-  padding: 10px;
-}
-
-.Row {
-  margin-bottom: 20px;
-  float: left;
-  position: relative;
-  width: 100%;
-}
-
-.Lang-tag {
-  padding:10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  float: left;
-  position: relative;
-  width: 100px;
-  background-color: #afcfee;
-}
-
-.Display-linebreak {
-  white-space: pre-wrap;
-}
-
-.Project-link {
-  padding: 10px;
-  margin: 10px;
-  align-self: center;
+  color: black;
 }
 
 @keyframes App-logo-spin {

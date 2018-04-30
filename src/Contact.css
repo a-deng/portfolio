@@ -1,0 +1,28 @@
+.Contact {
+  text-align: center;
+  background-color: #fafafa;
+  border: 5px black;
+  border-style: solid;
+  overflow: auto;
+}
+
+.Contact-title {
+  font-size: 1.5em;
+}
+
+.Contact-info {
+  overflow: auto;
+  width: 100%;
+  margin-left: auto;
+  padding-bottom: 20px;
+}
+
+.Contact-method {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.Method {
+  padding: 10px;
+}

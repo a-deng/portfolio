@@ -1,0 +1,62 @@
+.Bio {
+  text-align: center;
+  background-color: #fafafa;
+  border: 5px black;
+  border-style: solid;
+}
+
+.Bio-title {
+  font-size: 2em;
+}
+
+.Bio-subtitle {
+  font-size: 1.5em;
+}
+
+.Bio-info {
+  font-size: large;
+  padding: 20px;
+}
+
+.Bio-pic {
+  padding: 10px;
+  width: 30%;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.Divider {
+  margin: auto;
+  width: 90%;
+  height: 3px;
+  background-color: black;
+}
+
+.Edu-info {
+  font-size: large;
+}
+
+.Work-info {
+  font-size: large;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  overflow: auto;
+  width: 90%;
+  margin-left: auto;
+}
+
+.Work {
+  float: left;
+  width: 30%;
+}
+
+.Work-pic {
+  padding: 10px;
+  max-width: 80%;
+  height: 70px;
+}
+
+.Work-desc {
+  margin: auto;
+  width: 90%;
+}
